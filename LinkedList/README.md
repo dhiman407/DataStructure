@@ -1,8 +1,8 @@
-#LinkedList
+# LinkedList
 
 Linked List is a collection of links which contains items. Each link contains a connection to another link.
 
-#Singly Linked List
+# Singly Linked List
 
 Item Navigation is forward link. Link contains two parts.
 
@@ -10,7 +10,7 @@ Item Navigation is forward link. Link contains two parts.
 
 2) Link to the next node.
 
-#Doubly Linked List
+# Doubly Linked List
 
 Item can be navigated in forward and backward direction.
 
