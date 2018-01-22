@@ -40,3 +40,16 @@ SLinkedList.prototype.add = function(value) {
     return node;
 };
 ```
+# Find node in the Linked List with given value
+```js
+SLinkedList.prototype.find = function(value){
+  var currentNode  = this.head;
+  while(currentNode){
+    if(currentNode.data === value){
+      return currentNode;
+    }
+    currentNode = currentNode.next;    
+  }
+  return -1;
+}
+```
