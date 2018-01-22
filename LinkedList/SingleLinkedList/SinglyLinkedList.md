@@ -7,4 +7,4 @@ function SinglyList() {
     this._length = 0;
     this.head = null;
 }
-``
+```
