@@ -40,7 +40,7 @@ SLinkedList.prototype.add = function(value) {
     return node;
 };
 ```
-# Find node in the Linked List with given value
+# Find node in the Linked List
 ```js
 SLinkedList.prototype.find = function(value){
   var currentNode  = this.head;
@@ -51,5 +51,28 @@ SLinkedList.prototype.find = function(value){
     currentNode = currentNode.next;    
   }
   return -1;
+}
+```
+# Remove node from the Linked List
+```js
+SLinkedList.prototype.delete = function(value){
+  var currentNode = this.head;
+  //Case: When target node is the head node.
+  if(currentNode.data === value){
+    this.head = currentNode.next;
+    this.length--;
+  }else{
+    //Keeping track of the previous node because we have to link it to the next node of the target node
+    var previousNode = currentNode;
+    while(currentNode){
+      if(currentNode.data === value){
+        previousNode.next = currentNode.next;
+        this.length--;
+        break;
+      }
+      previousNode = currentNode;
+      currentNode = currentNode.next;
+    }
+  }
 }
 ```
